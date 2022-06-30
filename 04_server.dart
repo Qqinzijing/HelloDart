@@ -46,8 +46,3 @@ Response _sumHandler(request, String a, String b) {
         .convert({'a': aNum, 'b': bNum, 'sum': aNum + bNum}),
     headers: {
       // 设置一些头信息，声明存活时间
-      'content-type': 'application/json',
-      'Cache-Control': 'public, max-age=604800',
-    },
-  );
-}

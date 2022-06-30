@@ -52,6 +52,4 @@ Future<void> _handleError(String path) async {
   if (await FileSystemEntity.isDirectory(path)) {
     stderr.writeln('ErrorL $path is a direcory');
   } else {
-    exitCode = 2;
-  }
 }
